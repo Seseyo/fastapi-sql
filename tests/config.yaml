@@ -1,0 +1,12 @@
+app:
+  LOCAL_URL: 'http://localhost:8004/api/v1/menus'
+  target_menu_id: "1"
+  target_menu_title: "My menu 1"
+  target_menu_description: "My menu description 1"
+  target_submenu_id: "1"
+  target_submenu_title: "My submenu 1"
+  target_submenu_description: "My submenu description 1"
+  target_dish_id: "1"
+  target_dish_title: "My dish 1"
+  target_dish_description: "My dish description 1"
+  target_dish_price: "12.54"

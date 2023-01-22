@@ -1,0 +1,7 @@
+db:
+  driver: postgresql+psycopg2
+  host: localhost
+  port: 5432
+  user: semen
+  password: 12345
+  base: alembic_test
