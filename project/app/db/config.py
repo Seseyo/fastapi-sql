@@ -1,6 +1,5 @@
 import os
 
-# import yaml
 from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 from sqlalchemy.engine.url import URL
