@@ -8,8 +8,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 with open(f'{dir_path}/config.yaml', 'r') as file:
     config = yaml.load(file, Loader=yaml.FullLoader)
 
-LOCAL_PORT = os.environ.get('APP_PORT')
-LOCAL_URL = f'http://localhost:{LOCAL_PORT}/api/v1/menus'
+LOCAL_URL = os.environ.get('WEB_URL')
 
 
 #1 Просматриваем список меню

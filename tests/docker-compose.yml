@@ -1,0 +1,22 @@
+version: '2.1'
+
+services:
+  tests:
+    container_name: tests
+    build: ./app
+    volumes:
+      - ./app:/usr/src
+    networks:
+      - my_net
+    environment:
+      - WEB_URL=http://$WEB_HOST:$WEB_PORT/api/v1/menus
+    entrypoint: >
+      sh -c "
+        echo 'Starting pytest...' &&
+        echo 'Connecting to port:' $WEB_PORT &&
+        pytest -v ./test_api.py
+      "
+
+networks:
+  my_net:
+    name: my_net

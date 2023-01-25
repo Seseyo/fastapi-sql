@@ -3,10 +3,10 @@ version: '2.1'
 services:
   web:
     container_name: web
-    image: semengorbunov/fastapi-sql:latest
-#    build: ./project
-#    volumes:
-#      - ./project:/usr/src
+#    image: semengorbunov/fastapi-sql:latest
+    build: ./project
+    volumes:
+      - ./project:/usr/src
     networks:
       - my_net
     ports:
